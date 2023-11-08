@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #ececec;
+}
+
+.anime {
+  position: relative;
+  animation: error 0.5s ease-in 0.1s 1;
+}
+
+@keyframes error {
+  0% {
+    left: 5px;
+  }
+  20% {
+    left: -5px;
+  }
+  40% {
+    left: 5px;
+  }
+  50% {
+    left: -5px;
+  }
+  60% {
+    left: 5px;
+  }
+  80% {
+    left: -5px;
+  }
+  100% {
+    left: 0;
+  }
+}
