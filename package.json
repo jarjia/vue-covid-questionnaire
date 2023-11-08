@@ -1,16 +1,20 @@
 {
+  "homepage": "https://jarjia.github.io/vue-covid-questionnaire",
   "name": "covid-questionnaire",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@vee-validate/rules": "^4.11.8",
     "@vee-validate/zod": "^4.11.8",
+    "gh-pages": "^6.0.0",
     "pinia": "^2.1.7",
     "vee-validate": "^4.11.8",
     "vue": "^3.3.4",
